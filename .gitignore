@@ -5,3 +5,5 @@
 __pycache__/
 *.py[cod]
 *$py.class
+**/assets/downloads/
+**/assets/oxford_flowers102/
