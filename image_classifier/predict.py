@@ -42,7 +42,7 @@ def predict(image_path, model, top_k):
 def process_predictions(predictions):
     with open(category_names, 'r') as f:
         class_names = load(f)
-        mapped_results = [(class_names[str(r)], p) for r, p in zip(predictions[1], predictions[0])]
+        mapped_results = [(class_names[str(r + 1)], p) for r, p in zip(predictions[1], predictions[0])]
         return mapped_results
         
 
